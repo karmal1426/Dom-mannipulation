@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li class="firstClass"></li>
+        <li class="secondClass"></li>
+        <li class="thirdClass"></li>
+        <li class="forthClass"></li>
+        <li class="fifthClass"></li>
+        <li class="sixthClass"></li>
+        <li class="seventhClass"></li>
+        <li class="eightClass"></li></li>
+        <li class="ninthClass"></li>
+        <li class="tenthClass"></li>
+        <li class="eleventhClass"></li>
+        <li class="twelfthClass"></li>
+        <li class="thirteenthClass"></li>
+        <li></li>
+    </ul>
+    
+</body>
+<script>
+    const fullSentence = "JavaScript is a versatile programming language."
+    document.querySelector('.firstClass').innerHTML = 'Full length of sentence is: '.concat(fullSentence.length)
+    document.querySelector('.secondClass').innerHTML = fullSentence.toLowerCase()
+    document.querySelector('.thirdClass').innerHTML = 'Sentence without versatile: '.concat(fullSentence.replace("versatile", ""))
+    document.querySelector('.forthClass').innerHTML = 'keyword is: '.concat(fullSentence.slice(16, 25))
+    document.querySelector('.fifthClass').innerHTML = 'Sentence without versatile: '.concat(fullSentence.replace("JavaScript", "Python"))
+    document.querySelector('.sixthClass').innerHTML = 'does sentence include language: '.concat(fullSentence.includes("language"))
+    document.querySelector('.seventhClass').innerHTML = 'Sentence without versatile: '.concat(fullSentence.indexOf("programming"))
+    document.querySelector('.eightClass').innerHTML = 'Sentence without versatile: '.concat(fullSentence.substring('0', '10'))
+    document.querySelector('.ninthClass').innerHTML = 'Sentence without versatile: '.concat(fullSentence.includes("language."))
+    document.querySelector('.tenthClass').innerHTML = 'Sentence without versatile: '.concat(fullSentence.split(" "))
+    document.querySelector('.eleventhClass').innerHTML = 'Sentence without versatile: '.concat(fullSentence.trim())
+    document.querySelector('.twelfthClass').innerHTML = 'keyword is: '.concat(fullSentence.slice(37, 47))
+    document.querySelector('.thirteenthClass').innerHTML = 'Sentence without versatile: '.concat(fullSentence.replaceAll("a", "@"))
+
+</script>
+
+
+
+</html>
