@@ -51,3 +51,54 @@ document.querySelectorAll('.front')[2].innerHTML = 'does the string start with T
 document.querySelectorAll('.front')[3].innerHTML = 'count the number of words: ' + str.split(' ').length
 
 document.getElementsByTagName('li')[10].textContent = str.slice(0, str.indexOf('x')+1)
+
+array = [1,4,2,6,5,7]
+
+nameArray = ['omotayo', 'femi', 'yetunde', 'tolani']
+
+console.log(array.sort().reverse())
+
+
+console.log(array.sort((x,y) => x -y))
+
+
+console.log(nameArray.sort((x,y) => x.length - y.length))
+
+
+people.filter(person => person.length())
+
+
+arr = [22, 4, 56, 8, 8, 90]
+
+console.log(arr.reduce((num1, num2) => num1 * num2, 1))
+
+const mathScore = prompt('input score for MathExam');
+const englishScore = prompt('input score for englishExam');
+
+
+averageScore = englishScore + mathScore / 2 
+
+if (englishScore > 50 && mathScore > 50){
+    console.log('Promoted to the next class')
+}
+else if (englishScore > 50 && mathScore< 50){
+    console.log('repeat a math exam')
+}
+else if (mathScore > 50 && englishScore< 50){
+    console.log('repeat a english')
+}
+else {
+    console.log('repeat class')
+}
+
+englishScore > 50 && mathScore > 50 ? alert('Promoted to next class'):
+englishScore > 50 && mathScore< 50 ? alert('repeat Math exam'):
+mathScore > 50 && englishScore< 50 ? alert('repeat english exam'): alert('repeat class')
+
+
+mathScore >= 50 || englishScore >=50 ?
+alert(`you need to reseat ${mathScore >= 50 ? 'english': 'mathematics'}`): alert('You are to repeat the class')
+alert('you need to reset ', (mathScore >=50 ? 'english': 'mathematics'))
+
+
+

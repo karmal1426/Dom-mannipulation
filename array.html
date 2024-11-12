@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li class="class1"></li>
+        <li class="class2"></li>
+        <li class="class3"></li>
+        <li class="class4"></li>
+        <li class="class5"></li>
+        <li class="class6"></li>
+        <li class="class7"></li>
+        <li class="class8"></li>
+        <li class="class9"></li>
+        <li class="class10"></li>
+        <li class="class11"></li>
+        <li class="class12"></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</body>
+    <script>
+        const numbers = [12, 5, 8, 130, 44, 2, 17, 9, 33, 105, 68, 72, 19]
+        document.querySelector('.class1').innerText = numbers.filter((num) => num > 20)
+        document.querySelector('.class2').innerText = numbers.map((num) => num * 2)
+        document.querySelector('.class3').innerText = numbers.reduce((num1, num2) => num1 + num2, 1 )
+        document.querySelector('.class4').innerText = numbers.sort((a, b) => a - b).reverse()
+        document.querySelector('.class5').innerText = numbers.find((num) => num > 50)
+        document.querySelector('.class6').innerText = numbers.some((num) => num === 33)
+        document.querySelector('.class7').innerText = numbers.slice(0, 4)
+        document.querySelector('.class8').innerText = numbers.toSpliced(1,2, 15, 25)
+        document.querySelector('.class9').innerText = numbers.reverse()
+        document.querySelector('.class10').innerText = numbers.every((num) => num < 200)
+        document.querySelector('.class11').innerText = numbers.map((num1) => num1 + 1, 1)
+        document.querySelector('.class12').innerText = numbers.slice(0, 6).toSorted((num) => num % 7)
+
+
+    </script>
+</html>
